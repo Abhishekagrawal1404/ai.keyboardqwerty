@@ -132,9 +132,15 @@ public void voiceToText() {
 
 public void predictiveText() {
     String message = textEntry.getText();
-    // TODO: implement predictive text using OpenAI API
-    textEntry.setText(message);
+    String modelId = "text-davinci-002";
+    String prompt = message + "\n";
+    ArrayList<String> completions = openai.generateCompletions(prompt, modelId);
+    if (completions.size() > 0) {
+        String prediction = completions.get(0);
+        textEntry.setText(prediction);
+    }
 }
+
 
 public void messagingPlatform() {
     // TODO: integrate with the desired messaging platform API
