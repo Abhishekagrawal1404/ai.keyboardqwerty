@@ -21,7 +21,7 @@ import ai.openai.speech.SpeechRecognizer;
 
 public class AIKeyboard implements ActionListener {
 
-    private static final String OPENAI_API_KEY = "YOUR_OPENAI_API_KEY_HERE";
+    private static final String OPENAI_API_KEY = ""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"";
     private static final String GIPHY_API_KEY = "YOUR_GIPHY_API_KEY_HERE";
     private static final String MODEL_ENGINE = "davinci";
     
