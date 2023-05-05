@@ -21,7 +21,7 @@ import ai.openai.speech.SpeechRecognizer;
 
 public class AIKeyboard implements ActionListener {
 
-    private static final String OPENAI_API_KEY = ""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"";
+    private static final String OPENAI_API_KEY = "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";
     private static final String GIPHY_API_KEY = "1JQfNloEq2bj37n0kzkhiO84tRUnAgx9";
     private static final String MODEL_ENGINE = "davinci";
     
@@ -43,8 +43,8 @@ public class AIKeyboard implements ActionListener {
     private JButton socialMediaButton;
     
     public AIKeyboard() {
-        openai = new OpenAI(OPENAI_API_KEY, MODEL_ENGINE);
-        giphy = new Giphy(GIPHY_API_KEY);
+        openai = new OpenAI("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", "davinci");
+        giphy = new Giphy("JQfNloEq2bj37n0kzkhiO84tRUnAgx9";
         speechRecognizer = new SpeechRecognizer();
         
         frame = new JFrame("ORANET AI Keyboard");
